@@ -30,3 +30,5 @@ Una IA o un dispositivo qu etenga conocimiento, ejemplos los celulares. Iphone t
 (S/f-c). Unir.net. Recuperado el 15 de septiembre de 2026, de https://mexico.unir.net/noticias/ingenieria/sistemas-inteligentes/
 
 
+## Act. 1.4 10 Articulos 
+
