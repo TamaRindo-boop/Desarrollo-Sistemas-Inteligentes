@@ -11,8 +11,9 @@
 - **T:** Identificar si una transacción bancaria es fraudulenta.
 - **P:** Porcentaje de fraudes detectados correctamente.
 - **E:** Historial de transacciones bancarias clasificadas como normales o fraudulentas.
-### Detección de URLs seguras
+
+### Proyecto: Detección de URLs seguras
 
 - **T:** Determinar si una URL es segura o maliciosa.
 - **P:** Porcentaje de URLs clasificadas correctamente.
-- **E:** Base de datos de URLs conocidas como seguras y maliciosas.
+- **E:** Base de datos de URLs conocidas como seguras y maliciosas. (deteccion de tres comando de creaciones realizadas)
