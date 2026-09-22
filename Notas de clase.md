@@ -1,4 +1,6 @@
 
+
+##### UNIDAD_1
 ## **¿Qué es un Sistema inteligente?**
 Entidad que percibe su etorno mediante sensores y actua sobre ese entono mediando actuadres, seleccionando en cada momento la accion que maximiza ssu medida de desempeño, dado lo  que ha percibido hasta ese punto y el conocimiento con el que cuenta
 
@@ -28,3 +30,17 @@ Sistema compuesto por varios agentess autonomos que interactuan entre si, cooper
 
 
 -Trabajo, en google academico en una area de trabajo pero donde se aplico y que se resolvio, 10 articulos en total 
+
+
+
+##### UNIDAD_2
+Machine Learning:
+ El machine learning es el subconjunto de inteligencia artificial (IA) centrado en algoritmos que pueden "aprender" los patrones de los datos de entrenamiento y, posteriormente, hacer _inferencias_ precisas sobre nuevos datos. Esta capacidad de reconocimiento de patrones permite que los modelos de machine learning tomen decisiones o predicciones sin instrucciones explícitas y codificadas.
+
+Ejemplos
+Prediccion de precion de  una casa
+T: predecir el precio de una casa
+P: error cuadratico medio entre precio predicho y precio real
+E: base de datos de ventas pasadas
+
+
