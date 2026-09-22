@@ -45,12 +45,12 @@ E: base de datos de ventas pasadas
 
 
 ###### Flujo de trabajo
-1.  Definir la tarea (T): que se quiere predecir  o decidir
-2.  Reunir la experiencia (E): los datos de los que el sistema va a aprender
-3.  Elegir como medir el desempeño(P): la metrica que dira si el modelo sirve
-4.  Entrenar : el algoritmo ajusta sus parametros internos para minimizar el error sobre los datos de entrenamiento
-5. Evaluar: se mide P sobre datos que el modelo nunca vio durante el entrenamiento
-6. Usar o ajustar: si P es suficiente, se despluega; si no, se repite el ciclo con mas datos o un modelo distinto
+1.  **Definir la tarea (T)**: que se quiere predecir  o decidir
+2.  **Reunir la experiencia (E)**: los datos de los que el sistema va a aprender
+3.  **Elegir como medir el desempeño(P)**: la metrica que dira si el modelo sirve
+4.  **Entrenar** : el algoritmo ajusta sus parametros internos para minimizar el error sobre los datos de entrenamiento
+5. **Evaluar**: se mide P sobre datos que el modelo nunca vio durante el entrenamiento
+6. **Usar o ajustar**: si P es suficiente, se despluega; si no, se repite el ciclo con mas datos o un modelo distinto
 
 PROYECTO FINAL: 
 1. que tarea hace su sistema?
@@ -59,3 +59,11 @@ PROYECTO FINAL:
 4. Evaluar 
 
 
+
+###### Clasificacion de Machine Learning
+
+| Tipo                  | Definición                                                                                                                                                         | Ejemplo                                                                                                                                                              |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Supervisado**    | El modelo aprende usando datos que ya tienen una **respuesta o etiqueta conocida**. Aprende a relacionar las características de entrada con el resultado esperado. | **Detección de spam:** se le dan correos marcados como “spam” o “no spam” y aprende a clasificar nuevos correos.                                                     |
+| **2. No supervisado** | El modelo trabaja con datos **sin etiquetas** y busca encontrar patrones, grupos o relaciones por sí mismo.                                                        | **Segmentación de clientes:** agrupa clientes según sus compras, edad o hábitos, sin que previamente se le indique a qué grupo pertenece cada uno.                   |
+| **3. Por Esfuerzo**   | El modelo aprende mediante **prueba y error**, recibiendo recompensas o penalizaciones según sus acciones.                                                         | **Un robot que aprende a caminar:** recibe una recompensa cuando avanza sin caerse y una penalización cuando se cae, aprendiendo gradualmente qué acciones realizar. |
