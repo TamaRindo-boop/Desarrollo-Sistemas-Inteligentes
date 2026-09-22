@@ -37,10 +37,25 @@ Sistema compuesto por varios agentess autonomos que interactuan entre si, cooper
 Machine Learning:
  El machine learning es el subconjunto de inteligencia artificial (IA) centrado en algoritmos que pueden "aprender" los patrones de los datos de entrenamiento y, posteriormente, hacer _inferencias_ precisas sobre nuevos datos. Esta capacidad de reconocimiento de patrones permite que los modelos de machine learning tomen decisiones o predicciones sin instrucciones explícitas y codificadas.
 
-Ejemplos
+###### Ejemplos
 Prediccion de precion de  una casa
 T: predecir el precio de una casa
 P: error cuadratico medio entre precio predicho y precio real
 E: base de datos de ventas pasadas
+
+
+###### Flujo de trabajo
+1.  Definir la tarea (T): que se quiere predecir  o decidir
+2.  Reunir la experiencia (E): los datos de los que el sistema va a aprender
+3.  Elegir como medir el desempeño(P): la metrica que dira si el modelo sirve
+4.  Entrenar : el algoritmo ajusta sus parametros internos para minimizar el error sobre los datos de entrenamiento
+5. Evaluar: se mide P sobre datos que el modelo nunca vio durante el entrenamiento
+6. Usar o ajustar: si P es suficiente, se despluega; si no, se repite el ciclo con mas datos o un modelo distinto
+
+PROYECTO FINAL: 
+1. que tarea hace su sistema?
+2. que algoritmo?
+3. Experiencia
+4. Evaluar 
 
 
