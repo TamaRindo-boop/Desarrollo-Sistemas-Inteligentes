@@ -67,3 +67,14 @@ PROYECTO FINAL:
 | **1. Supervisado**    | El modelo aprende usando datos que ya tienen una **respuesta o etiqueta conocida**. Aprende a relacionar las características de entrada con el resultado esperado. | **Detección de spam:** se le dan correos marcados como “spam” o “no spam” y aprende a clasificar nuevos correos.                                                     |
 | **2. No supervisado** | El modelo trabaja con datos **sin etiquetas** y busca encontrar patrones, grupos o relaciones por sí mismo.                                                        | **Segmentación de clientes:** agrupa clientes según sus compras, edad o hábitos, sin que previamente se le indique a qué grupo pertenece cada uno.                   |
 | **3. Por Esfuerzo**   | El modelo aprende mediante **prueba y error**, recibiendo recompensas o penalizaciones según sus acciones.                                                         | **Un robot que aprende a caminar:** recibe una recompensa cuando avanza sin caerse y una penalización cuando se cae, aprendiendo gradualmente qué acciones realizar. |
+
+
+##### Glosario (Todo con base de Machine Learning)
+
+1. Pandas
+2. Matplotlib
+3. Scikit-learn (Investigar que datos de prueba maneja)
+4. Google Colab
+5. Arbol de decision
+6. Matriz de confusion
+7. Sobreajuste
