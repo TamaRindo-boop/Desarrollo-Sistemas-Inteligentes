@@ -34,6 +34,7 @@ Sistema compuesto por varios agentess autonomos que interactuan entre si, cooper
 
 
 ##### UNIDAD_2
+
 Machine Learning:
  El machine learning es el subconjunto de inteligencia artificial (IA) centrado en algoritmos que pueden "aprender" los patrones de los datos de entrenamiento y, posteriormente, hacer _inferencias_ precisas sobre nuevos datos. Esta capacidad de reconocimiento de patrones permite que los modelos de machine learning tomen decisiones o predicciones sin instrucciones explícitas y codificadas.
 
@@ -78,3 +79,36 @@ PROYECTO FINAL:
 5. Arbol de decision
 6. Matriz de confusion
 7. Sobreajuste
+
+##### Caja negra (Black Box Testing)
+
+Se prueba el software **sin conocer su código ni estructura interna**. Solo importa qué entra y qué sale.
+
+- **Enfoque:** Entrada → Salida (comportamiento externo)
+    
+- **Qué se prueba:** Funcionalidad, requisitos, casos de uso
+    
+- **Quién lo hace:** Testers, usuarios, QA (no necesitan saber programar)
+    
+- **Ventajas:** Simula el uso real; no requiere conocimiento técnico
+    
+- **Desventajas:** No detecta errores en lógica interna; puede dejar caminos sin probar
+    
+- **Ejemplo:** Probar un login ingresando usuario/contraseña y verificando si entra o no
+    
+
+##### Caja blanca (White Box Testing)
+
+Se prueba el software **conociendo su código, estructura y lógica interna**.
+
+- **Enfoque:** Estructura interna, flujo de control, caminos de ejecución
+    
+- **Qué se prueba:** Cobertura de código, ramas, condiciones, bucles
+    
+- **Quién lo hace:** Desarrolladores o testers con conocimiento técnico
+    
+- **Ventajas:** Detecta errores lógicos ocultos; alta cobertura
+    
+- **Desventajas:** Costoso, requiere acceso al código, no detecta requisitos faltantes
+    
+- **Ejemplo:** Verificar que cada rama de un `if/else` se ejecute al menos una vez
