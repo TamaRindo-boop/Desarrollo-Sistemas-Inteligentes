@@ -112,3 +112,59 @@ Se prueba el software **conociendo su código, estructura y lógica interna**.
 - **Desventajas:** Costoso, requiere acceso al código, no detecta requisitos faltantes
     
 - **Ejemplo:** Verificar que cada rama de un `if/else` se ejecute al menos una vez
+
+
+Arquitectura-
+Front->bootstrap   https://getbootstrap.com/docs/5.3/getting-started/download/
+
+**Backend->Django**
+API->Django
+BD->Postgresql
+**Modelo-> Machine Learning**
+
+
+## Algoritmos de Machine Learning
+
+### Árbol de decisión
+
+Es un algoritmo que toma decisiones mediante una serie de preguntas o condiciones. Su estructura se parece a un árbol y es fácil de interpretar.
+
+### Regresión logística
+
+Se utiliza principalmente para problemas de clasificación. Calcula la probabilidad de que un dato pertenezca a una determinada categoría.
+
+### K-NN (K vecinos más cercanos)
+
+Clasifica un dato observando los ejemplos más cercanos. La categoría que tenga más vecinos cercanos será la predicción.
+
+### Naive Bayes
+
+Es un algoritmo basado en probabilidades. Calcula qué categoría es más probable para un dato y funciona especialmente bien con textos y clasificación.
+
+### SVM (Máquinas de vectores de soporte)
+
+Busca una frontera que separe las diferentes categorías de datos. Intenta encontrar la separación que deje el mayor margen posible entre las clases.
+
+### Bosque aleatorio
+
+Combina varios árboles de decisión y utiliza sus resultados para obtener una predicción más estable y reducir el riesgo de errores de un solo árbol.
+
+### Red neuronal
+
+Está formada por varias capas de "neuronas" artificiales que aprenden patrones a partir de los datos. Es especialmente útil para problemas complejos como reconocimiento de imágenes, voz y texto.
+
+### Resumen rápido
+
+- **Árbol de decisión:** toma decisiones mediante condiciones.
+    
+- **Regresión logística:** calcula probabilidades para clasificar.
+    
+- **K-NN:** clasifica según los vecinos más cercanos.
+    
+- **Naive Bayes:** utiliza probabilidades para clasificar.
+    
+- **SVM:** busca la mejor frontera entre categorías.
+    
+- **Bosque aleatorio:** combina múltiples árboles.
+    
+- **Red neuronal:** aprende patrones complejos mediante capas.
