@@ -86,3 +86,57 @@ Mide el **número de nodos generados o visitados** antes de encontrar la soluci�
 Memoria necesaria para la frontera. BFS: O(b^d). DFS: O(bm). UCS: O(b^(1+⌊C*/ε⌋)).
 
 Mide la cantidad máxima de memoria (nodos) que el algoritmo necesita almacenar al mismo tiempo para gestionar la exploración
+
+
+##### Sistemas de busqueda:
+Un sistema de búsqueda es un método que permite resolver un problema encontrando una secuencia de acciones que lleva desde un estado inicial hasta un estado meta, siguiendo ciertas reglas.
+
+Un sistema de búsqueda se compone de cinco elementos principales:
+
+1. Estado inicial: es la situación en la que comienza el problema.
+2. Acciones: son los movimientos o las operaciones que se pueden realizar para cambiar de un estado a otro.
+3. Modelo: describe cómo cambia el estado cuando se realiza una acción; es decir, cuál será el resultado de cada acción.
+4. Prueba de meta: permite comprobar si se ha alcanzado el objetivo deseado.
+5. Costo del camino: es el costo total de las acciones realizadas desde el estado inicial hasta el estado meta. Puede representar distancia, tiempo, dinero o cantidad de pasos.
+
+1
+![[Pasted image 20261008181225.png]]
+![[Pasted image 20261008181259.png|672]]
+**1. ¿Qué es lo que hace?**
+
+- **Simula algoritmos:** Permite elegir entre diferentes métodos matemáticos (como A*, Dijkstra, BFS, etc.) para calcular la ruta óptima.
+- **Visualiza el proceso:** Muestra gráficamente cómo el algoritmo "explora" el espacio (las áreas celestes) antes de decidir el camino final (la línea amarilla).
+- **Permite la interacción:** El usuario puede dibujar los obstáculos (muros grises), mover el punto de inicio (cuadrado verde) y el punto de destino (cuadrado rojo).
+    
+
+**2. Elementos que se ven en la imagen:**
+
+- **Cuadrícula (Grid):** Es el "mundo" donde se mueve el algoritmo.
+- **Nodo de Inicio (Verde):** El punto de partida.
+- **Nodo de Destino (Rojo):** A donde se quiere llegar.
+- **Muros (Gris oscuro):** Obstáculos que el camino no puede atravesar.
+- **Estadísticas (Abajo a la izquierda):** Muestra datos técnicos como la longitud del camino ("length"), el tiempo que tardó ("time") y cuántas operaciones realizó.
+    
+
+2
+![[Pasted image 20261008181321.png]]
+![[Pasted image 20261008181340.png]]
+
+## ¿Qué hace cada imagen?
+
+### 1. Imagen superior
+
+- El cuadro verde es el punto de inicio.
+- El cuadro rojo es el destino.
+- Los cuadros grises son obstáculos.
+- La zona azul representa los lugares que el algoritmo ha explorado.
+- La línea amarilla muestra el camino encontrado.
+- Está activada la opción Allow Diagonal, que permite moverse en diagonal.
+    
+### 2. Imagen inferior
+
+Se utiliza el mismo algoritmo, pero con otras opciones:
+
+- Bi-directional: busca desde el inicio y desde la meta al mismo tiempo.
+- Don't Cross Corners: impide pasar en diagonal entre dos obstáculos que forman una esquina.
+- Allow Diagonal: está desactivada, por lo que el movimiento diagonal no está permitido.
