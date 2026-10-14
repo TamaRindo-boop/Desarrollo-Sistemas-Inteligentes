@@ -140,3 +140,29 @@ Se utiliza el mismo algoritmo, pero con otras opciones:
 - Bi-directional: busca desde el inicio y desde la meta al mismo tiempo.
 - Don't Cross Corners: impide pasar en diagonal entre dos obstáculos que forman una esquina.
 - Allow Diagonal: está desactivada, por lo que el movimiento diagonal no está permitido.
+
+
+## El problema de la busqueda ciega
+
+#### Heuristica:
+Regla practica que estima que tan lejos esta un estado de la meta
+
+#### La pista: distancia Manhattan:
+El agente solo se mueve arriba, abajo, izquierda y derecha
+
+###### Tres numeros para cada casilla
+g: lo que ya costo llegar desde S hasta esta casilla
+h: lo que se estima que falta desde aqui hasta G
+f = g + h: costo toal estimado de un camino que pasa por aqui
+
+## 3.2 Actividad A*
+
+
+**1. ¿Qué longitud tiene cada algoritmo?**  
+El A* tuvo una longitud de 30, y el ciego (BFS) de 23.8. La diferencia es porque en el BFS permití movimiento en diagonal.
+
+**2. ¿Cuánto tiempo se tardó cada algoritmo?**  
+El A* tardó 0.7000 ms y el BFS 0.9000 ms. El A* fue más rápido porque usa una heurística que lo guía hacia la meta.
+
+**3. ¿Qué diferencia observas?**  
+La gran diferencia está en las operaciones. El A* fue muy eficiente, revisó solo 346 cuadros yendo directo a la meta. El BFS, al ser ciego, revisó 2212 cuadros y se expandió por casi toda la pantalla. 
