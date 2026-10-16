@@ -158,6 +158,7 @@ f = g + h: costo toal estimado de un camino que pasa por aqui
 ## 3.2 Actividad A*
 
 
+
 **1. ¿Qué longitud tiene cada algoritmo?**  
 El A* tuvo una longitud de 30, y el ciego (BFS) de 23.8. La diferencia es porque en el BFS permití movimiento en diagonal.
 
@@ -166,3 +167,54 @@ El A* tardó 0.7000 ms y el BFS 0.9000 ms. El A* fue más rápido porque usa una
 
 **3. ¿Qué diferencia observas?**  
 La gran diferencia está en las operaciones. El A* fue muy eficiente, revisó solo 346 cuadros yendo directo a la meta. El BFS, al ser ciego, revisó 2212 cuadros y se expandió por casi toda la pantalla. 
+
+
+## 3.3 Actividad Busquedas Heuristicas
+
+### Pregunta 1
+
+¿Cuántas casillas exploró **amplitud**, **voraz** y **A***? ¿Cuántos pasos tiene el camino de cada uno?
+
+
+### Pregunta 2
+
+Con tus palabras: ¿por qué la heurística hace que se exploren menos casillas?
+
+
+### Pregunta 3
+
+¿Cuántas casillas exploró cada algoritmo? Comparado con el campo abierto, ¿A* ahorró tanto como antes? ¿Por qué crees que la pared le afecta?
+
+
+### Pregunta 4
+
+Anota **pasos** y **costo** de costo uniforme, voraz y A*. ¿Cuántas casillas exploró costo uniforme y cuántas A*?
+
+
+### Pregunta 5
+
+¿Por qué voraz eligió un camino tan caro? ¿Qué toma en cuenta A* que voraz ignora?
+
+### Pregunta 6
+
+Compara A* con h = 0 contra costo uniforme. ¿Qué observas? ¿Qué conclusión sacas sobre la relación entre A* y la búsqueda ciega?
+
+### Pregunta 7
+
+Con `peso = 3`, ¿cuántas casillas exploró y cuánto costó el camino? Compara con A* normal. ¿Cuál es la ventaja y cuál el riesgo de dar más peso a la pista?
+
+
+###  Pregunta 8
+
+Con `INTENTOS = 20`: ¿cuántas combinaciones probó cada método, qué exactitud obtuvo y cuánto tardó?
+
+
+### Pregunta 9
+
+Prueba con 5 y con 50 intentos. ¿Mejoró la exactitud al aumentar los intentos? ¿Qué te dice eso?
+
+
+###  Pregunta 10
+
+¿En qué situación usarías grid search y en cuál random search? Relaciónalo con búsqueda ciega y heurística.
+
