@@ -218,3 +218,55 @@ Prueba con 5 y con 50 intentos. ¿Mejoró la exactitud al aumentar los intentos?
 
 ¿En qué situación usarías grid search y en cuál random search? Relaciónalo con búsqueda ciega y heurística.
 
+
+
+### ¿Que es una red neuronal?
+Un programa que aprende a resolver una tarea a partir de ejemplos, en lugar de seguir reglas escritas por una persona. Esta hecha de muchas unidades pequeñas, las neuronas artificiales, conectadas entre si. Cada una hace un calculo sencillo; la respuesta sale de todas trabajando juntas.
+
+Neuronal: LA IDEA SE INSPIRA EN EL CEREBRO, PERO NO FUNCIONA COMO UN CEREBRO
+
+
+## 3.4 ¿Que relacion tiene las GPUs y las redes neuronales?
+
+Las GPU y las redes neuronales están  conectadas porque, las redes neuronales son gigantescas operaciones de álgebra lineal que las GPU pueden resolver de forma masiva y simultánea. Mientras que una CPU procesa tareas complejas en orden secuencial, la arquitectura de una GPU está diseñada con miles de núcleos independientes ideales para el cálculo paralelo.
+
+
+## Una neurona artificial (Recibe, pondera, decide)
+
+1. Recibe  varios datos de entrada (ej: tamaño, edad, precio)
+2. A cada dato de la una importancia, llamada peso. Un dato importante pesa mucho; uno irrelevante, casi nada.
+3. Junta todo y decide que tan fuerte es su respuesta
+
+
+## De una neurona a una red
+Una sola neurona resuelve cosas muy simples. Al conectar muchas, en capas, la red capta patrones complejas.
+
+- Capa de entrada: reccibe los datos 
+- Capas ocultas: cada una combina lo que le entrega la anterior
+- Capa de salida: da laa respuesta
+
+## Como aprende una red: entrenar
+El entrenamiento repite este ciclo miles o millones de veces
+
+1. La red recibe un ejemplo y da una respuesta
+2. Se compara con la respuesta correcta (aprendizaje supervisado)
+3. Si se equivoco, se ajustan los pesos un poco para que se equivoque menos la proxima vez.
+
+## Lo que ya conocen, ahora con redes
+
+- Dattos de entrenamient y de prueba: se separsn para saber si la red funcioona con casos nuevos
+- Sobrwajuste: un ared grande puede memorizar los ejemplos en vez de aprender el patron, y falla con datos nuevos
+- Falsos positivos y falsos negativos: el costo de cada error sigue deccidiendo si el modelo sirve
+- Hiperparametros: numeros de capas, numero de neuronnas, cuanto se ajusta cada vez. Se buscan con grid search o busqueda aleatoria
+
+## ¿Que la hace profunda?
+
+Es cuend
+
+
+Tipos de redes segun el dato
+
+
+## Un poco de historia
+
+## Tipos de redes segun el dato

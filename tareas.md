@@ -69,3 +69,12 @@ Si, pero con mas intentos este mejora pero el rendimiento decrece
 - **Grid search:** espacio pequeño, tiempo suficiente, se quiere garantía de optimalidad - como búsqueda ciega.
 
 - **Random search:** espacio grande, se necesita rapidez, se acepta solución cercana a la óptima - como heurística.
+
+
+## 3.4 ¿Que relacion tiene las GPUs y las redes neuronales?
+
+Las GPU y las redes neuronales están  conectadas porque, las redes neuronales son gigantescas operaciones de álgebra lineal que las GPU pueden resolver de forma masiva y simultánea. Mientras que una CPU procesa tareas complejas en orden secuencial, la arquitectura de una GPU está diseñada con miles de núcleos independientes ideales para el cálculo paralelo.
+
+#### Desarrollar un mapa mental acerca de las redes neuronales
+
+![[Mayela.jpg]]
