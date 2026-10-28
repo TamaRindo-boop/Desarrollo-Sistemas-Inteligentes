@@ -261,12 +261,110 @@ El entrenamiento repite este ciclo miles o millones de veces
 
 ## ¿Que la hace profunda?
 
-Es cuend
-
-
-Tipos de redes segun el dato
+E
 
 
 ## Un poco de historia
 
 ## Tipos de redes segun el dato
+
+
+
+
+
+
+
+## INVESTIGAR SOBRE GPU Y CPU DIFERENCIAS
+
+## 1. ¿Qué es la CPU y qué es la GPU?
+
+- CPU (Unidad Central de Procesamiento): es el cerebro general de la computadora. Ejecuta instrucciones, controla el sistema operativo, organiza datos y coordina las tareas.
+    
+- GPU (Unidad de Procesamiento Gráfico): está diseñada para realizar muchas operaciones matemáticas simultáneamente. Se utiliza en gráficos, simulaciones e inteligencia artificial.
+    
+
+## 2. Diferencias principales
+
+|CPU|GPU|
+|---|---|
+|Tiene pocos núcleos potentes.|Tiene muchas unidades de cálculo.|
+|Destaca en tareas secuenciales y variadas.|Destaca en tareas paralelas.|
+|Controla y organiza procesos.|Acelera cálculos masivos.|
+|Ejecuta programas y gestiona datos.|Procesa matrices y redes neuronales.|
+
+## 3. ¿Por qué no utilizar solamente la GPU?
+
+Porque la GPU no es eficiente para todas las tareas:
+
+1. Necesita que el software y la CPU organicen gran parte del trabajo.
+    
+2. Algunas operaciones dependen de resultados anteriores y no pueden ejecutarse en paralelo.
+    
+3. La transferencia de datos entre memoria y procesadores consume tiempo.
+    
+4. Las tareas pequeñas pueden ejecutarse más rápido en la CPU.
+    
+5. La GPU consume energía y necesita refrigeración.
+    
+
+## 4. ¿Cómo funciona cada procesador?
+
+CPU:
+
+1. Busca una instrucción.
+    
+2. La interpreta.
+    
+3. Prepara los datos.
+    
+4. Ejecuta la operación.
+    
+5. Guarda el resultado y continúa.
+    
+
+GPU:
+
+1. Recibe las tareas.
+    
+2. Prepara los datos en su memoria.
+    
+3. Divide el trabajo en operaciones paralelas.
+    
+4. Ejecuta miles de operaciones simultáneamente cuando es posible.
+    
+5. Entrega o almacena los resultados.
+    
+
+## 5. ¿Por qué la GPU es tan buena para la inteligencia artificial?
+
+La IA utiliza enormes cantidades de operaciones matemáticas, especialmente multiplicaciones de matrices.
+
+La GPU es excelente para estas operaciones porque:
+
+- Paralelismo: realiza muchas operaciones al mismo tiempo.
+    
+- Velocidad: acelera los cálculos de las redes neuronales.
+    
+- Memoria: algunas GPU disponen de memoria de gran ancho de banda para mover datos rápidamente.
+    
+- Hardware especializado: ciertas GPU incluyen unidades diseñadas para acelerar operaciones de IA.
+    
+
+## 6. ¿Cómo se utilizan en la inteligencia artificial?
+
+Durante el entrenamiento de una IA:
+
+- La CPU organiza los datos y coordina el programa.
+    
+- La GPU calcula predicciones y gradientes.
+    
+- El modelo ajusta sus parámetros para reducir errores.
+    
+- El proceso se repite hasta obtener el rendimiento deseado.
+    
+
+Durante el uso de una IA, la GPU puede acelerar los cálculos necesarios para generar respuestas.
+
+
+## Conocimientos: Sistemas difusos
+
