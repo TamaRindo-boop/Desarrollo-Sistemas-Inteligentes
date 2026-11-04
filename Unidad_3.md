@@ -368,3 +368,27 @@ Durante el uso de una IA, la GPU puede acelerar los cálculos necesarios para ge
 
 ## Conocimientos: Sistemas difusos
 
+
+
+## 3.5   Articulos de logica difusa (3 Tabla)
+
+
+Mamdani o Takagi-Sugeno
+
+| Nombre                                                                                                                                    | Aplicacion    | Motor de inferencia                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Técnicas de lógica difusa en ingeniería de control                                                                                        | Takagi-Sugeno | - **Recibir** datos imprecisos de los sensores.<br>- **Procesar y evaluar** el compendio de reglas lingüísticas ("si causa, entonces efecto").<br>- **Calcular** la acción de control adaptivo necesaria para manejar las no linealidades y la variabilidad del sistema.                                        -Tienen los sistemas de inferencia difusa (SID) para la identificación de sistemas dinámicos, aporta soluciones a esquemas de control que contemplan modelos de referencia |
+| Sistema difuso Takagi-Sugeno para predecir el riesgo de propagación de Sigatoka Negra _Mycosphaerella fijiensis_ en el cultivo de plátano | Takagi-Sugeno | - **Recibir** los datos de los sensores o registros de **temperatura** y **humedad relativa**.<br>- **Procesar** la información mediante las reglas programadas en MATLAB y JFuzzyLogic (Java).<br>- **Calcular** un valor constante que determina el riesgo de proliferación de la sigatoka negra en los cultivos de plátano.                                                                                                                                                             |
+| Modelo de lógica difusa para pronosticar la inflación en Colombia                                                                         | Mamdani       | - **Recibir** las variables económicas que afectan el ciclo inflacionario en Colombia.<br>- **Procesar** estos datos bajo condiciones de incertidumbre.<br>- **Evaluar** las relaciones lógicas para realizar la estimación final de la inflación.                                                                                                                                                                                                                                         |
+
+
+### Datos, informacion y conocimiento
+
+
+### La regla de produccion
+
+
+### Componentes de un sistema de reglas
+
+
+### El problema de las reglas clasicas
