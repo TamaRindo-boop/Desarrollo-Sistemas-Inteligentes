@@ -441,3 +441,149 @@ Mamdani o Takagi-Sugeno
 - baja
 - media
 - alta
+
+
+# Resumen: Sistemas Inteligentes (Lógica Difusa y Redes Neuronales)
+
+**Tags:** #sistemas_inteligentes #logica_difusa #redes_neuronales #machine_learning #UC
+
+## 1. Fundamentos: Datos vs. Conocimiento
+
+- **Dato:** Un valor sin contexto (Ej: 28).
+    
+- **Información:** El dato con contexto (Ej: La temperatura de la sala es 28 °C).
+    
+- **Conocimiento:** Lo que permite decidir (Ej: Si hace calor, el ventilador debe ir más rápido).
+    
+
+> _Un sistema inteligente necesita conocimiento, no solo datos._
+
+## 2. Sistemas Basados en Reglas Clásicas
+
+- **Regla de producción:** `SI condición ENTONCES acción o conclusión`.
+    
+- **Componentes:**
+    
+    - **Base de hechos:** Lo que se sabe del caso actual.
+        
+    - **Base de reglas:** Conocimiento del experto escrito como reglas.
+        
+    - **Motor de inferencia:** Aplica las reglas a los hechos y saca conclusiones.
+        
+- **El problema de la lógica clásica:** La condición se cumple o no se cumple (todo o nada). No maneja matices.
+    
+    - _Ejemplo:_ Si "alta" es >30°C, entonces 29.9°C no cuenta y 30.1°C sí. Es un cambio brusco. No sabemos escribir reglas para conceptos vagos como "alto", "un poco" o "muy".
+        
+
+## 3. Lógica Difusa (Fuzzy Logic)
+
+Introducida por Zadeh en 1965 para manejar la vaguedad del lenguaje humano.
+
+- **Grados de pertenencia:** Cada valor tiene un grado entre 0 y 1 para un término.
+    
+    - _Ejemplo a 28°C:_ Fría (0), Templada (0.4), Caliente (0.6).
+        
+    - _Importante:_ **No es una probabilidad**. El valor se conoce con certeza; lo vago es la palabra.
+        
+- **Funciones de pertenencia:** Definen el grado (0 a 1) de un valor en un término. Las más usadas son:
+    
+    - **Triangular:** Sube en línea recta, pico y baja. La más simple.
+        
+    - **Trapezoidal:** Tiene una meseta (valor 1 en un rango).
+        
+    - **Gaussiana:** Campana suave.
+        
+    - **Sigmoidal:** Forma de S.
+        
+- **Reglas difusas:** Usan variables lingüísticas. (Ej: `SI temperatura es fría ENTONCES velocidad es baja`). Cada condición se cumple en cierto grado.
+    
+- **Conflictos entre reglas:** En un sistema clásico se elige una por prioridad. En el difuso, **se activan todas**, cada una con su peso, y se combinan.
+    
+
+## 4. Las 4 Etapas de un Sistema Difuso
+
+1. **Fuzzificación:** Convertir el valor medido en grados de pertenencia.
+    
+2. **Evaluar las reglas:** Cada regla se activa según el grado de su condición.
+    
+3. **Combinar (Inferencia):** Unir lo que dicen todas las reglas activas.
+    
+4. **Defuzzificación:** Convertir el resultado difuso en un valor concreto (ej. 68% de velocidad).
+    
+
+> **Ejemplo práctico (Invernadero con ventiladores):**  
+> Entradas: Temp (templada 0.2, caliente 0.8) y Humedad (media 0.3, alta 0.7).  
+> Reglas activas:
+> 
+> - Si caliente Y húmedad alta -> vel. alta (peso 0.7)
+>     
+> - Si caliente Y húmedad media -> vel. media (peso 0.3)
+>     
+> - Si templada Y húmedad alta -> vel. media (peso 0.2)  
+>     _Cálculo final (simplificado):_ (0.7×90 + 0.3×50 + 0.2×50) / (0.7+0.3+0.2) = **73%**
+>     
+
+**Ventajas de la Lógica Difusa:**
+
+- Explicable, usa lenguaje de experto.
+    
+- No necesita datos de entrenamiento.
+    
+- Suaviza cambios bruscos.
+    
+
+**Límites:**
+
+- Las reglas y grados los define una persona (no aprende sola).
+    
+- Con muchas variables, el número de reglas crece muy rápido.
+    
+
+## 5. Redes Neuronales (Deep Learning)
+
+- **Historia:** Perceptrón (1958) -> Retropropagación (1986) -> AlexNet (2012) -> Transformers (2017).
+    
+- **¿Qué la hace "profunda"?** Tiene muchas capas ocultas. Cada capa aprende algo más abstracto que la anterior (ej. en rostros: bordes -> ojos/nariz -> "es una cara").
+    
+- **Tipos de redes según el dato:**
+    
+    - **CNN (Convolucionales):** Imágenes y video.
+        
+    - **RNN (Recurrentes):** Datos en secuencia (series de tiempo).
+        
+    - **Transformers:** Texto, y cada vez más imágenes/audio (ej. ChatGPT).
+        
+- **El costo de la "caja negra":** Nadie puede explicar paso a paso por qué dio una respuesta concreta. Entrenar modelos grandes consume mucha computación/energía.
+    
+
+## 6. ¿Cuándo usar qué? (Toma de decisiones)
+
+**Usar Lógica Difusa / Sistemas de Reglas cuando:**
+
+- Hay un experto disponible.
+    
+- Hay pocos datos.
+    
+- Se debe explicar la decisión.
+    
+- Las condiciones son graduales.
+    
+
+**Usar Machine Learning / Redes Profundas cuando:**
+
+- Hay muchos datos etiquetados (imágenes, audio, texto).
+    
+- No sabemos escribir las reglas a mano.
+    
+- Un resultado un poco impreciso es aceptable (o hay una persona que lo revisa).
+    
+- **NO conviene usarlo si:** Hay pocos datos, los datos son simples tablas (mejor un árbol de decisión) o se requiere explicabilidad estricta (ej. un médico justificando un diagnóstico).
+    
+
+**Las 3 condiciones para elegir técnica:**
+
+1. Datos disponibles.
+    
+2. Necesidad de explicabilidad.
+    
+3. Costo de equivocarse.
